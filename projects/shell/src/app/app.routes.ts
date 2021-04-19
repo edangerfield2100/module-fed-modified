@@ -8,14 +8,20 @@ export const APP_ROUTES: Routes = [
     component: HomeComponent,
     pathMatch: 'full',
   },
-
-  // Your route here:
-
+  {
+    path: 'mfe1',
+    loadChildren: () =>
+      import('mfe1/LandingModule').then((m) => m.LandingModule),
+  },
+  {
+    path: 'mfe2',
+    loadChildren: () => import('mfe2/Module').then((m) => m.AppModule),
+  },
   {
     path: 'flights',
-    loadChildren: () => import('mfe1/Module').then((m) => m.FlightsModule),
+    loadChildren: () =>
+      import('mfe1/FlightModule').then((m) => m.FlightsModule),
   },
-
   {
     path: '**',
     component: NotFoundComponent,
