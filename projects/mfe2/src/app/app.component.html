@@ -1,2 +1,11 @@
 <div>Micro-Frontend #2</div>
+<div>
+  <div style="margin-top: 5px">
+    <button (click)="addToDo()">Add ToDo to NgRx</button>
+  </div>
+  <div *ngFor="let todo of toDos" style="margin-top: 8px">
+    <div>Name: {{ todo.name }}</div>
+  </div>
+</div>
+
 <router-outlet></router-outlet>

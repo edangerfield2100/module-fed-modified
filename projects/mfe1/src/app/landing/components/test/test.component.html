@@ -1,5 +1,13 @@
 <div>Micro-Frontend #1</div>
 
 <div>
-  <a href="http://localhost:5000/mfe2">Go to MFE #2</a>
+  <!-- <div style="padding: 5px; margin: 5px">
+    <a href="http://localhost:5000/mfe2">Go to MFE #2</a>
+  </div> -->
+  <div style="margin-top: 5px">
+    <button (click)="addToDo()">Add ToDo to NgRx</button>
+  </div>
+</div>
+<div *ngFor="let todo of toDos" style="margin-top: 8px">
+  <div>Name: {{ todo.name }}</div>
 </div>
