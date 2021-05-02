@@ -89,9 +89,7 @@
               "projects/mfe1/src/favicon.ico",
               "projects/mfe1/src/assets"
             ],
-            "styles": [
-              "projects/mfe1/src/styles.css"
-            ],
+            "styles": ["projects/mfe1/src/styles.css"],
             "scripts": [],
             "extraWebpackConfig": "projects/mfe1/webpack.config.js"
           }
@@ -104,9 +102,7 @@
               "projects/mfe1/tsconfig.spec.json",
               "projects/mfe1/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -222,9 +218,7 @@
               "projects/shell/tsconfig.spec.json",
               "projects/shell/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -265,9 +259,7 @@
               "projects/mfe2/src/favicon.ico",
               "projects/mfe2/src/assets"
             ],
-            "styles": [
-              "projects/mfe2/src/styles.scss"
-            ],
+            "styles": ["projects/mfe2/src/styles.scss"],
             "scripts": [],
             "extraWebpackConfig": "projects/mfe2/webpack.config.js"
           },
@@ -333,9 +325,7 @@
               "projects/mfe2/src/favicon.ico",
               "projects/mfe2/src/assets"
             ],
-            "styles": [
-              "projects/mfe2/src/styles.scss"
-            ],
+            "styles": ["projects/mfe2/src/styles.scss"],
             "scripts": [],
             "extraWebpackConfig": "projects/mfe2/webpack.config.js"
           }
@@ -348,9 +338,7 @@
               "projects/mfe2/tsconfig.spec.json",
               "projects/mfe2/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -400,15 +388,13 @@
               "projects/state-lib/tsconfig.lib.json",
               "projects/state-lib/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     }
   },
-  "defaultProject": "mfe1",
+  "defaultProject": "shell",
   "cli": {
     "packageManager": "yarn"
   }

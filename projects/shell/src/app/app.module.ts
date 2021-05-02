@@ -1,23 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 import { StoreModule } from '@ngrx/store';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { APP_ROUTES } from './app.routes';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
+
 import {
   ROOT_REDUCERS,
   metaReducers,
 } from 'projects/state-lib/src/lib/app-state/reducer';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(APP_ROUTES),
+    AppRoutingModule,
+    // RouterModule.forRoot(APP_ROUTES),
     StoreModule.forRoot(ROOT_REDUCERS, {
       metaReducers,
       runtimeChecks: {
@@ -30,7 +30,7 @@ import {
     }),
     StoreRouterConnectingModule.forRoot(),
   ],
-  declarations: [AppComponent, HomeComponent, NotFoundComponent],
+  declarations: [AppComponent, HomeComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

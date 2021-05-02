@@ -7,7 +7,6 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { FlightsModule } from './flights/flights.module';
 import { APP_ROUTES } from './app.routes';
 import { LandingModule } from './landing/landing.module';
 import {
@@ -18,7 +17,6 @@ import {
 @NgModule({
   imports: [
     BrowserModule,
-    FlightsModule,
     LandingModule,
     RouterModule.forRoot(APP_ROUTES),
     // StoreModule.forRoot(ROOT_REDUCERS, {
